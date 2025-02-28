@@ -1,0 +1,331 @@
+  /* Books Section Styles */
+  
+  .contain {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1a1a;
+    color: #ccc;
+    margin-top: 50px;
+}
+.contain h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.5s,background-color 0.5s ;
+    background-color: bisque;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book:hover {
+    transform: scale(1.5);
+    background-color: #ccc;
+  }
+  
+  .book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+    .book {
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+    }
+  }
+  
+ /* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .book {
+      width: 250px;
+      height: 350px;
+      margin: 15px;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .book {
+      width: 200px;
+      height: 300px;
+      margin: 10px;
+    }
+  }
+  
+  /* Small Mobile Screens */
+  @media (max-width: 479px) {
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .book {
+      width: 150px;
+      height: 250px;
+      margin: 5px;
+    }
+  }
+
+  /* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+    .book:hover {
+      transform: scale(1.5);
+      background-color: #ccc;
+    }
+  }
+  
+  /* Tablet Screens */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .book:hover {
+      transform: scale(1.3);
+      background-color: #ccc;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .book:hover {
+      transform: scale(1.2);
+      background-color: #ccc;
+    }
+  }
+  
+  /* Small Mobile Screens */
+  @media (max-width: 479px) {
+    .book:hover {
+      transform: scale(1.1);
+      background-color: #ccc;
+    }
+  }
+
+
+
+/*footer stats*/
+
+.footer {
+    background-color:black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .footer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .social-links a:hover {
+    color: #ccc;
+  }
+  
+  .copyright {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+
+  /* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+      padding: 20px;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .footer {
+      padding: 20px;
+    }
+  }
+  
+  /* Small Mobile Screens */
+  @media (max-width: 479px) {
+    .footer {
+      padding: 10px;
+    }
+    .social-links {
+      margin-top: 10px;
+    }
+    .copyright {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+/* Contact Page CSS Styling */
+
+.contact-page {
+  background-color: #1e1a1a;
+  color: #ccc;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.contact-page h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: burlywood;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info div {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links a {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .contact-page {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .contact-info {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .social-links {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-page {
+    padding: 30px;
+    width: 100%;
+  }
+  .contact-info {
+    width: 60%;
+  }
+  .social-links {
+    width: 60%;
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-page {
+    padding: 20px;
+    width: 100%;
+  }
+  .contact-info {
+    width: 80%;
+  }
+  .social-links {
+    width: 80%;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .contact-page {
+    padding: 10px;
+    width: 100%;
+  }
+  .contact-info {
+    width: 90%;
+  }
+  .social-links {
+    width: 90%;
+  }
+}
