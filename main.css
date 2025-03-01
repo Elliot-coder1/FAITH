@@ -79,6 +79,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 100%;
     }
     .book {
       width: 200px;
@@ -180,10 +181,44 @@
   }
 
 
+  /* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .footer {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .footer p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .social-links {
+    margin-top: 30px;
+  }
+  .social-links a {
+    margin-right: 30px;
+    font-size: 36px;
+    color: #fff;
+  }
+  .social-links a:hover {
+    color: #ccc;
+  }
+  .copyright {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+
+
   /* Tablet Screens */
 @media (min-width: 768px) and (max-width: 1199px) {
     .footer {
       padding: 20px;
+      width: 100%;
     }
   }
   
@@ -191,6 +226,7 @@
   @media (min-width: 480px) and (max-width: 767px) {
     .footer {
       padding: 20px;
+      width: 100%;
     }
   }
   
@@ -198,6 +234,7 @@
   @media (max-width: 479px) {
     .footer {
       padding: 10px;
+      width: 100%;
     }
     .social-links {
       margin-top: 10px;

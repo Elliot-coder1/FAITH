@@ -321,7 +321,7 @@ nav ul li ul li a:hover {
     }
 
     .image-section img{
-      width: 80%;
+      width: 100%;
       height: auto;
     }
   }
@@ -342,7 +342,7 @@ nav ul li ul li a:hover {
       font-size: 10px;
     }
     .image-section img {
-      width: 80%;
+      width: 100%;
       height: auto;
     }
   }
