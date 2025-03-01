@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: oswald sans-serif;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
 
 body{
@@ -173,12 +178,18 @@ nav ul li ul li a:hover {
   nav {
     padding: 20px;
   }
+  nav li{
+    font-size: 20px;
+  }
 }
 
 /* Tablet Screens */
 @media (min-width: 768px) and (max-width: 1199px) {
   nav {
     padding: 15px;
+  }
+  nav li{
+    font-size:15px ;
   }
 }
 
@@ -268,6 +279,7 @@ nav ul li ul li a:hover {
     }
     .content-section {
       width: 50%;
+      font-size: 35px;
     }
   }
   
@@ -286,6 +298,10 @@ nav ul li ul li a:hover {
       width: 100%;
       font-size: 20px;
     }
+    .image-section img{
+      width: 90%;
+      height: auto;
+    }
   }
   
   /* Mobile Screens */
@@ -301,6 +317,12 @@ nav ul li ul li a:hover {
     }
     .content-section {
       width: 100%;
+      font-size: 10px;
+    }
+
+    .image-section img{
+      width: 80%;
+      height: auto;
     }
   }
   
@@ -317,9 +339,10 @@ nav ul li ul li a:hover {
     }
     .content-section {
       width: 100%;
+      font-size: 10px;
     }
     .image-section img {
-      width: 100%;
+      width: 80%;
       height: auto;
     }
   }
@@ -434,6 +457,7 @@ nav ul li ul li a:hover {
     width: 100%;
     padding: 20px;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .book-cover {
     width: 100%;
@@ -456,28 +480,33 @@ nav ul li ul li a:hover {
 /* Mobile Screens */
 @media (min-width: 480px) and (max-width: 767px) {
   .con {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .book-cover {
-    width: 40%;
+    width: 100%;
     margin-right: 20px;
   }
   .book-cover img {
-    width: 80%;
+    width: 100%;
     height: 400px;
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .book-details {
-    width: 60%;
+    width: 100%;
     padding: 20px;
   }
+  .pre-order-button {
+    padding: 2% 4%;
+    font-size: 80%;
+}
 }
 
 /* Small Mobile Screens */
@@ -487,6 +516,9 @@ nav ul li ul li a:hover {
     margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .book-cover {
     width: 100%;
