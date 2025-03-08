@@ -1,6 +1,7 @@
   /* Books Section Styles */
   
   .contain {
+    width: 100%;
     text-align: center;
     padding: 20px;
     background-color: #1e1a1a;

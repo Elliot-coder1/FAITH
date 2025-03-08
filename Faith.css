@@ -15,7 +15,7 @@ body{
     color: #e0e0e0;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    overflow-x: hidden;
     
 }
 
@@ -27,6 +27,7 @@ nav {
   width: 100%;
   background-color: #1e1a1a;
   z-index: 1000;
+  overflow-x: hidden;
 }
 
 nav ul {
@@ -36,6 +37,8 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 nav ul li {
@@ -142,9 +145,43 @@ nav ul li ul li a:hover {
 .sidebar li:last-child {
   border-bottom: none;
 }
-.menu-button{
+.menu-button {
   display: none;
   margin-right: 70px;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .menu-button {
+    display: block;
+    margin-right: 0;
+    width: 20%;
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .menu-button {
+    display: block;
+    margin-right: 0;
+    width: 15%;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .menu-button {
+    display: block;
+    margin-right: 0;
+    width: 20%;
+  }
 }
 
 @media(max-width: 800px){
@@ -178,6 +215,12 @@ nav ul li ul li a:hover {
   nav {
     padding: 20px;
   }
+
+  nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   nav li{
     font-size: 20px;
   }
@@ -187,7 +230,15 @@ nav ul li ul li a:hover {
 @media (min-width: 768px) and (max-width: 1199px) {
   nav {
     padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+
+  nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   nav li{
     font-size:15px ;
   }
@@ -198,12 +249,22 @@ nav ul li ul li a:hover {
   nav {
     padding: 10px;
   }
+
+  nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /* Small Mobile Screens */
 @media (max-width: 479px) {
   nav {
     padding: 5px;
+  }
+
+  nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -218,8 +279,8 @@ nav ul li ul li a:hover {
 
 /*profile styles*/
 .container {
-  font-family: Barlow sans-serif;
-    max-width: 100%;
+   font-family: Barlow sans-serif;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #1e1a1a;
@@ -228,6 +289,7 @@ nav ul li ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   
   .image-section {
@@ -290,6 +352,7 @@ nav ul li ul li a:hover {
       margin: 0 auto;
       flex-direction: row;
       flex-wrap: wrap;
+      overflow-x: hidden;
     }
     .image-section {
       width: 100%;
@@ -311,6 +374,7 @@ nav ul li ul li a:hover {
       margin: 0 auto;
       flex-direction: row;
       flex-wrap: wrap;
+      overflow-x: hidden;
     }
     .image-section {
       width: 100%;
