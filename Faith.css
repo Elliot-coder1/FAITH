@@ -215,7 +215,6 @@ nav ul li ul li a:hover {
 @media (min-width: 1200px) {
   nav {
     padding: 20px;
-    position: fixed;
   }
 
   nav ul{
@@ -234,7 +233,6 @@ nav ul li ul li a:hover {
     padding: 15px;
     max-width: 1200px;
     margin: 0 auto;
-    position: fixed;
   }
 
   nav ul{
@@ -251,7 +249,6 @@ nav ul li ul li a:hover {
 @media (min-width: 480px) and (max-width: 767px) {
   nav {
     padding: 10px;
-    position: fixed;
   }
 
   nav ul{
