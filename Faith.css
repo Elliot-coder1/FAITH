@@ -240,7 +240,7 @@ nav ul li ul li a:hover {
   }
 
   nav li{
-    font-size:15px ;
+    font-size:35px ;
   }
 }
 
@@ -254,6 +254,10 @@ nav ul li ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  nav li{
+    font-size:35px ;
+  }
 }
 
 /* Small Mobile Screens */
@@ -265,6 +269,10 @@ nav ul li ul li a:hover {
   nav ul{
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  nav li{
+    font-size:30px ;
   }
 }
 
