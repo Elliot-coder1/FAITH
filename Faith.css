@@ -117,6 +117,7 @@ nav ul li ul li a:hover {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 20px;
+  overflow-y: auto;
 }
 
 .sidebar li {
@@ -219,7 +220,7 @@ border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li:hover ul {
+nav ul li:hover  {
 display: block;
 }
 
@@ -256,7 +257,7 @@ color: #2e2e2e;
 }
 
 .sidebar {
-position: absolute;
+position: fixed;
 top: 0;
 right: 0;
 height: 100vh;
