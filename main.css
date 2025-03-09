@@ -367,3 +367,176 @@
     width: 90%;
   }
 }
+
+/* Subscribe Section Styles */
+
+.subscribe-section {
+  background-color: #1e1a1a;
+  color: #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.subscribe-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: burlywood;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#subscribe-form input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#subscribe-form button[type="submit"] {
+  background-color: #807676;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+#subscribe-form button[type="submit"] i {
+  margin-right: 10px;
+}
+
+#subscribe-form button[type="submit"]:hover {
+  background-color: rgb(107, 96, 82);
+}
+
+span {
+  color: #e6d5d5;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .subscribe-section {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscribe-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .subscribe-section p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  #subscribe-form input[type="email"] {
+    width: 60%;
+    padding: 15px;
+    font-size: 24px;
+  }
+  #subscribe-form button[type="submit"] {
+    padding: 15px 30px;
+    font-size: 24px;
+    width: 60%;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscribe-section {
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscribe-section h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .subscribe-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #subscribe-form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  #subscribe-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .subscribe-section {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscribe-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .subscribe-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  #subscribe-form input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+  }
+  #subscribe-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 80%;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .subscribe-section {
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscribe-section h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .subscribe-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #subscribe-form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #subscribe-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 90%;
+  }
+}

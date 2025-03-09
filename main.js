@@ -123,3 +123,16 @@ function animateAboutSlideIn() {
 
 // Call the function to animate the about section
 animateAboutSlideIn();
+
+
+
+
+
+
+
+
+
+
+
+
+

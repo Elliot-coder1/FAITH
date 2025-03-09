@@ -62,7 +62,7 @@
             </div>
             <div>
                 <h2>Email</h2>
-                <p><a href="mailto:Faithosemudiamen@gmail.com?subject=Hello%20there&body=I%20would%20like%20to%20know%20more%20about...">Faithosemudiamen@gmail</a></p>
+                <p><a href="mailto:Faithoseebhodaghe@gmail.com?subject=Hello%20there&body=I%20would%20like%20to%20know%20more%20about...">Faithoseebhodaghe@gmail.com</a></p>
             </div>
         </div>
         <h1>OUR SOCIALS</h1>
@@ -77,6 +77,28 @@
             </a>
         </div>
     </div>
+
+
+
+
+<!-- Subscribe to Newsletter Section -->
+<div class="subscribe-section">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Stay updated with the latest news and updates from Faith Ose Ebhodaghe.</p>
+    <form id="subscribe-form" name="submit-to-google-sheet">
+      <input type="email" id="email" name="Email" placeholder="Enter your email address">
+      <button type="submit">
+        <i class="fas fa-envelope"></i> Subscribe
+      </button>
+    </form>
+    <span id="msg"></span>
+  </div>
+
+
+
+
+
+
 
     <!--footer begins-->
 
@@ -102,5 +124,26 @@
     <!--footer ends-->
 
     <script src="main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnBLyEwiQI6Ojq2CLAfVJcQWW1FTgPnXx_RzfsDWamVu30LhzUDAAdyAZTmhJeFE2Wrg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks For Subscribing"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+
+
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
 </body>
 </html>
