@@ -596,10 +596,3 @@ span {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.light-mode #icon {
-  filter: invert(1);
-}
-
-.light-mode #icon img {
-  filter: invert(1);
-}
