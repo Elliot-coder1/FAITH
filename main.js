@@ -70,65 +70,6 @@ function animateBookSlideUp() {
   }, 700); // Delay the animation by 700ms
 }
 
-// Function to animate the rest of the pages
-function animateRestOfPages() {
-  // Set the initial position of the rest of the page containers to be off-screen
-  newsContainer.style.transform = 'translateX(-100%)';
-  mediaContainer.style.transform = 'translateX(-100%)';
-  readOnlineContainer.style.transform = 'translateX(-100%)';
-  contactContainer.style.transform = 'translateX(-100%)';
-  aboutContainer.style.transform = 'translateX(-100%)';
-  blogContainer.style.transform = 'translateX(-100%)';
-
-  // Set a timeout to delay the animation
-  setTimeout(() => {
-    // Animate the rest of the page containers to slide in from the left
-    newsContainer.style.transform = 'translateX(0)';
-    newsContainer.style.transition = 'transform 0.5s ease-in-out';
-    mediaContainer.style.transform = 'translateX(0)';
-    mediaContainer.style.transition = 'transform 0.5s ease-in-out';
-    readOnlineContainer.style.transform = 'translateX(0)';
-    readOnlineContainer.style.transition = 'transform 0.5s ease-in-out';
-    contactContainer.style.transform = 'translateX(0)';
-    contactContainer.style.transition = 'transform 0.5s ease-in-out';
-    aboutContainer.style.transform = 'translateX(0)';
-    aboutContainer.style.transition = 'transform 0.5s ease-in-out';
-    blogContainer.style.transform = 'translateX(0)';
-    blogContainer.style.transition = 'transform 0.5s ease-in-out';
-  }, 1000); // Delay the animation by 1000ms
-}
-
-// Call the functions to animate the profile, book, and rest of the pages
-animateProfileSlideIn();
-animateBookSlideUp();
-animateRestOfPages();
-
-
-
-// Get the about container element
-const aboutContainer = document.querySelector('.about-page');
-
-// Function to animate the about section
-function animateAboutSlideIn() {
-  // Set the initial position of the about container to be off-screen
-  aboutContainer.style.transform = 'translateX(-100%)';
-
-  // Set a timeout to delay the animation
-  setTimeout(() => {
-    // Animate the about container to slide in from the left
-    aboutContainer.style.transform = 'translateX(0)';
-    aboutContainer.style.transition = 'transform 0.5s ease-in-out';
-  }, 1000); // Delay the animation by 1000ms
-}
-
-// Call the function to animate the about section
-animateAboutSlideIn();
-
-
-
-
-
-
 
 
 
@@ -137,10 +78,57 @@ animateAboutSlideIn();
 var icon = document.getElementById("icon");
 
 icon.onclick = function(){
+  console.log("Onclick function triggered");
   document.body.classList.toggle("light-mode");
   if(document.body.classList.contains("light-mode")){
+    console.log("Light mode enabled");
     icon.src ="sun.png"
   }else{
+    console.log("Light mode disabled");
     icon.src = "moon.png"
   };
+};
+
+
+
+// Get the current theme color from local storage
+var themeColor = localStorage.getItem("themeColor");
+
+// If theme color is not set, default to dark mode
+if (themeColor === null) {
+  themeColor = "dark";
+}
+
+// Apply the theme color to the body element
+document.body.classList.toggle("light-mode", themeColor === "light");
+
+// Update the icon image based on the theme color
+var icon = document.getElementById("icon");
+if (themeColor === "light") {
+  icon.src = "sun.png";
+} else {
+  icon.src = "moon.png";
+}
+
+// Add an event listener to the icon to toggle the theme color
+icon.onclick = function() {
+  // Toggle the theme color
+  if (themeColor === "dark") {
+    themeColor = "light";
+  } else {
+    themeColor = "dark";
+  }
+
+  // Store the new theme color in local storage
+  localStorage.setItem("themeColor", themeColor);
+
+  // Apply the new theme color to the body element
+  document.body.classList.toggle("light-mode", themeColor === "light");
+
+  // Update the icon image based on the new theme color
+  if (themeColor === "light") {
+    icon.src = "sun.png";
+  } else {
+    icon.src = "moon.png";
+  }
 };
