@@ -330,10 +330,11 @@ nav li{
 .image-section {
   width: 40%;
   margin-right: 20px;
+  margin-top: 80px;
 }
 
 .image-section img {
-  width: 100%;
+  width: 80%;
   height: 650px;
   object-fit: cover;
   border-radius: 10px;
@@ -342,8 +343,8 @@ nav li{
 }
 
 .content-section {
-  width: 60%;
-  padding: 20px;
+  width: 40%;
+  padding: 25px;
   color: var(--text-color);
 }
 
@@ -383,14 +384,15 @@ nav li{
 /* Tablet Screens */
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 100;
+    width: 100%;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     overflow-x: hidden;
   }
   .image-section {
-    width: 100%;
+    width: 60%;
+    
   }
   .content-section {
     width: 100%;
@@ -412,7 +414,7 @@ nav li{
     overflow-x: hidden;
   }
   .image-section {
-    width: 100%;
+    width: 80%;
   }
   .content-section {
     width: 100%;
