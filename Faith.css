@@ -462,17 +462,18 @@ nav li{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 50px;
   background-color: var(--nav-color);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 60px;
 }
 
 .book-cover {
   width: 50%;
   margin-right: 20px;
+  margin-top: 100px;
 }
 
 .book-cover img {
@@ -516,6 +517,22 @@ nav li{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.pre-order-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.pre-order-button {
+  margin-bottom: 10px;
+}
+
+.pre-order-button:last-child {
+  margin-bottom: 0;
 }
 
 .pre-order-button:hover {
@@ -1325,3 +1342,252 @@ display: block;
   background-color: var(--accent-color);
   color: var(--primary-color);
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: var(--text-color);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: var(--nav-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .dropdown-content {
+    min-width: 200px;
+    padding: 15px;
+  }
+  .dropdown-content a {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .dropdown {
+    display: none;
+    
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .dropdown {
+    display: none;
+  
+  }
+  
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .dropdown {
+    display: none;
+  }
+  
+}
+
+.sidebar .dropdown {
+  position: relative;
+  display: block;
+}
+
+.sidebar .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: var(--nav-color);
+  min-width: 100%;
+  box-shadow: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar .dropdown-content a {
+  color: var(--text-color);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar .dropdown-content a:hover {
+  color: var(--primary-color);
+}
+
+.sidebar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .sidebar .dropdown-content {
+    position: relative;
+    min-width: 100%;
+    padding: 15px;
+  }
+  .sidebar .dropdown-content a {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sidebar .dropdown-content {
+    position: relative;
+    min-width: 100%;
+    padding: 12px;
+  }
+  .sidebar .dropdown-content a {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .sidebar .dropdown-content {
+    position: relative;
+    min-width: 100%;
+    padding: 10px;
+  }
+  .sidebar .dropdown-content a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .sidebar .dropdown-content {
+    position: relative;
+    min-width: 100%;
+    padding: 8px;
+  }
+  .sidebar .dropdown-content a {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+
+
+
+/*order styles*/
+.order-page {
+  background-color: var(--nav-color);
+  color: var(--primary-color);
+  padding: 20px;
+  margin-top: 200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.order-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.order-page p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.order-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-page label {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.order-page input, .order-page textarea {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.order-page input[type="submit"] {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.order-page input[type="submit"]:hover {
+  background-color: rgb(107, 96, 82);
+}
+
+.order-page select {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+/* Desktop and Laptop Screens */
+@media (min-width: 1200px) {
+  .order-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .order-page {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .order-page {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 479px) {
+  .order-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
