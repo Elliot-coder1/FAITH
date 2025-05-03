@@ -17,6 +17,7 @@
   --nav-color: #1e1a1a;
   --background-color: #2e2e2e;
   --new-color:black;
+  --next-color:#3d3b3b;
 }
 
 .light-mode{
@@ -28,6 +29,7 @@
   --nav-color: #e0e0e0;
   --background-color:#e0e0e0;
   --new-color:white;
+  --next-color:#d5d2d2;
 }
 
 .light-mode .menu-button svg {
@@ -1591,3 +1593,110 @@ display: block;
 }
 
 
+/*News and Events*/
+
+ .news{
+  margin: 0;
+  background-color: var(--background-color);
+}
+.containei {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.bg {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.bg:hover{
+  color: var(--accent-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+article {
+  background:var(--next-color);
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+}
+article h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+article h3.uppercase {
+  text-transform: uppercase;
+}
+article p {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--hover-color);
+  margin: 0;
+  line-height: 1.4;
+}
+article p strong {
+  font-weight: 700;
+}
+
+article h3:hover{
+  color: var(--accent-color);
+}
+
+article p:hover{
+  color: var(--accent-color);
+}
+
+/* Style the button */
+.btn-link {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for the link */
+  transition: background-color 0.3s ease;
+}
+.btn-link:hover,
+.btn-link:focus {
+  background-color: var(--hover-color);
+  outline: none;
+}
+
+.br{
+  margin-top: 10px;
+}
+/* Make sure the button link fits well on mobile screens */
+@media (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+  .btn-link {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-left: 5px;
+  }
+}
