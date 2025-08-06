@@ -134,3 +134,14 @@ icon.onclick = function() {
 };
 
 
+
+
+// Make header slightly smaller on scroll for better mobile experience
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header-container');
+    if (window.scrollY > 50) {
+        header.style.height = '60vh';
+    } else {
+        header.style.height = '70vh';
+    }
+});
